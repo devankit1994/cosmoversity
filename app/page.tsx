@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 import {
   Card,
   CardContent,
@@ -29,16 +30,11 @@ import {
   Building,
   Briefcase,
   TrendingUp,
-  Menu,
-  X,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function CosmoversityLanding() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const programs = [
     {
       title: "Global Dual-Degree MBA",
@@ -150,120 +146,13 @@ export default function CosmoversityLanding() {
     },
   ];
 
+  const router = useRouter();
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="flex items-center justify-between h-24">
-            <div className="flex items-center space-x-2">
-              <Link href="/">
-                <Image
-                  src="/logo.png"
-                  alt="Cosmoversity"
-                  width={120}
-                  height={120}
-                  className="cursor-pointer"
-                />
-              </Link>
-            </div>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link
-                href="/about"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                About
-              </Link>
-              <Link
-                href="#programs"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                Programs
-              </Link>
-              <Link
-                href="#leadership"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                Leadership
-              </Link>
-              <Link
-                href="#partners"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                Partners
-              </Link>
-              <Link
-                href="#testimonials"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                Testimonials
-              </Link>
-              <Button asChild>
-                <Link href="#enquiry">Get Started</Link>
-              </Button>
-            </nav>
-
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </button>
-          </div>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="md:hidden py-4 border-t">
-              <nav className="flex flex-col space-y-4">
-                <Link
-                  href="#about"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
-                >
-                  About
-                </Link>
-                <Link
-                  href="#programs"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
-                >
-                  Programs
-                </Link>
-                <Link
-                  href="#leadership"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
-                >
-                  Leadership
-                </Link>
-                <Link
-                  href="#partners"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
-                >
-                  Partners
-                </Link>
-                <Link
-                  href="#testimonials"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
-                >
-                  Testimonials
-                </Link>
-                <Button asChild className="w-fit">
-                  <Link href="#enquiry">Get Started</Link>
-                </Button>
-              </nav>
-            </div>
-          )}
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="absolute bg-grid-pattern opacity-5"></div>
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -278,22 +167,28 @@ export default function CosmoversityLanding() {
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Sharjah-based, UK-accredited education provider offering
-                  globally recognized qualifications through flexible blended
-                  delivery across UAE, India, Africa, and Nepal.
+                  Cosmoversity is an innovative blended education provider in
+                  the UAE, offering globally recognized programs designed to
+                  empower learners with real-world skills. Whether you’re
+                  advancing your career, pursuing higher education, or exploring
+                  new opportunities, we provide the flexibility and expertise
+                  you need to succeed.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 cursor-pointer"
+                  onClick={() => {
+                    router.push("/programs");
+                  }}
                 >
                   Explore Programs
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button size="lg" variant="outline">
-                  Download Brochure
+                <Button size="lg" variant="outline" className="cursor-pointer">
+                  <Link href="#enquiry">Get Started</Link>
                 </Button>
               </div>
 
@@ -356,9 +251,9 @@ export default function CosmoversityLanding() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  To provide accessible, high-quality UK-accredited education
-                  that empowers individuals and institutions globally, fostering
-                  innovation and excellence in learning.
+                  To provide accessible, high-quality education that empowers
+                  individuals and institutions globally, fostering innovation
+                  and excellence in learning.
                 </p>
               </CardContent>
             </Card>
@@ -506,7 +401,7 @@ export default function CosmoversityLanding() {
                     </Badge>
                     <Button
                       variant="ghost"
-                      className="group-hover:bg-blue-600 group-hover:text-white transition-colors"
+                      className="group-hover:bg-blue-600 group-hover:text-white transition-colors cursor-pointer"
                     >
                       Learn More
                       <ChevronRight className="ml-2 h-4 w-4" />
