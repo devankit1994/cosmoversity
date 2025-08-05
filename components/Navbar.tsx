@@ -29,42 +29,42 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="/about"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-600 hover:text-red-600 transition-colors"
             >
               About
             </Link>
             <Link
               href="/programs"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-600 hover:text-red-600 transition-colors"
             >
               Programs
             </Link>
             <Link
               href="/admissions"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-600 hover:text-red-600 transition-colors"
             >
               Admissions
             </Link>
             <Link
               href="/research"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-600 hover:text-red-600 transition-colors"
             >
               Research
             </Link>
             <Link
               href="/partnerships"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-600 hover:text-red-600 transition-colors"
             >
               Partnerships
             </Link>
             <Link
               href="/blogs"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-600 hover:text-red-600 transition-colors"
             >
               Blogs
             </Link>
             <Button
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 cursor-pointer"
+              className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 cursor-pointer"
               asChild
             >
               <Link href="/contact">Contact</Link>
@@ -90,44 +90,44 @@ export default function Navbar() {
             <nav className="flex flex-col space-y-4">
               <Link
                 href="/about"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                className="text-gray-600 hover:text-red-600 transition-colors"
               >
                 About
               </Link>
               <Link
                 href="/programs"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                className="text-gray-600 hover:text-red-600 transition-colors"
               >
                 Programs
               </Link>
               <Link
                 href="/admissions"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                className="text-gray-600 hover:text-red-600 transition-colors"
               >
                 Admissions
               </Link>
               <Link
                 href="/research"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                className="text-gray-600 hover:text-red-600 transition-colors"
               >
                 Research
               </Link>
               <Link
                 href="/partnerships"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                className="text-gray-600 hover:text-red-600 transition-colors"
               >
                 Partnerships
               </Link>
               <Link
                 href="/blogs"
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                className="text-gray-600 hover:text-red-600 transition-colors"
               >
                 Blogs
               </Link>
               <Button asChild className="w-fit">
                 <Link
                   href="/contact"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 cursor-pointer"
+                  className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 cursor-pointer"
                 >
                   Contact
                 </Link>

@@ -162,7 +162,7 @@ export default function CosmoversityLanding() {
                 </Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   Elevate Your Future with{" "}
-                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
                     Global Education
                   </span>
                 </h1>
@@ -179,7 +179,7 @@ export default function CosmoversityLanding() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 cursor-pointer"
+                  className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 cursor-pointer"
                   onClick={() => {
                     router.push("/programs");
                   }}
@@ -194,24 +194,24 @@ export default function CosmoversityLanding() {
 
               <div className="grid grid-cols-3 gap-8 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">50+</div>
+                  <div className="text-3xl font-bold text-red-600">50+</div>
                   <div className="text-sm text-gray-600">Countries Served</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-600">
+                  <div className="text-3xl font-bold text-indigo-700">
                     10,000+
                   </div>
                   <div className="text-sm text-gray-600">Graduates</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-600">98%</div>
+                  <div className="text-3xl font-bold text-amber-400">98%</div>
                   <div className="text-sm text-gray-600">Success Rate</div>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-3xl blur-3xl opacity-20"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-red-400 rounded-3xl blur-3xl opacity-20"></div>
               <Image
                 src="/graduation.png"
                 alt="Cosmoversity Campus"
@@ -230,7 +230,7 @@ export default function CosmoversityLanding() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">
               About{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
                 Cosmoversity
               </span>
             </h2>
@@ -291,7 +291,7 @@ export default function CosmoversityLanding() {
             </Card>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 lg:p-12 text-white">
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-8 lg:p-12 text-white">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl lg:text-3xl font-bold mb-4">
@@ -342,7 +342,7 @@ export default function CosmoversityLanding() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">
               Our{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
                 Programs
               </span>
             </h2>
@@ -370,7 +370,7 @@ export default function CosmoversityLanding() {
                         {program.title}
                       </CardTitle>
                       {program.featured && (
-                        <Badge className="bg-gradient-to-r from-blue-600 to-purple-600 text-white mb-2">
+                        <Badge className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white mb-2">
                           Flagship Program
                         </Badge>
                       )}
@@ -420,7 +420,7 @@ export default function CosmoversityLanding() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">
               Leadership{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
                 Team
               </span>
             </h2>
@@ -469,7 +469,7 @@ export default function CosmoversityLanding() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">
               Why Choose{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
                 Cosmoversity
               </span>
             </h2>
@@ -519,7 +519,7 @@ export default function CosmoversityLanding() {
                 className="group hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm"
               >
                 <CardHeader>
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <reason.icon className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle className="text-xl group-hover:text-blue-600 transition-colors">
@@ -541,7 +541,7 @@ export default function CosmoversityLanding() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">
               Our{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
                 Partners
               </span>
             </h2>
@@ -573,7 +573,7 @@ export default function CosmoversityLanding() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">
               Student{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
                 Success Stories
               </span>
             </h2>
@@ -628,7 +628,7 @@ export default function CosmoversityLanding() {
       {/* Enquiry Section */}
       <section
         id="enquiry"
-        className="py-20 lg:py-32 bg-gradient-to-br from-blue-600 to-purple-600"
+        className="py-20 lg:py-32 bg-gradient-to-br from-blue-600 to-indigo-700"
       >
         <div className="container mx-auto px-4 lg:px-6">
           <div className="max-w-4xl mx-auto">
@@ -743,7 +743,7 @@ export default function CosmoversityLanding() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div>
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center">
                   <GraduationCap className="h-5 w-5 text-white" />
                 </div>
                 <span className="text-lg font-bold">Cosmoversity</span>
