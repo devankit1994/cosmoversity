@@ -157,7 +157,7 @@ export default function CosmoversityLanding() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-200">
+                <Badge className="bg-amber-100 text-amber-700 hover:bg-amber  -200">
                   UK-Accredited Education Provider
                 </Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
